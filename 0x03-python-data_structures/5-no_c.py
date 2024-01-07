@@ -1,7 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 def no_c(my_string):
-    if my_string[:]:
-        first_string = my_string.translate({ord("c"): None})
-        second_string = first_string.translate({ord("C"): None})
-        return second_string
-    return my_string
+    new_string = ""
+    for elements in my_string:
+        if elements != "c" and elements != "C":
+            new_string += elements
+    return new_string
