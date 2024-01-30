@@ -2,7 +2,7 @@
 
 def raise_exception():
     try:
-        raise TypeError("This is a custom type exception")
+        raise TypeError()
     except TypeError as e:
         print(e)
         raise
